@@ -37,7 +37,8 @@ plt.ylim(0,4)
 plt.xticks(np.arange(200,2200+250,250))
 plt.yticks(np.arange(0,4.5,.5))
 plt.legend(frameon=False,mode="expand",ncol=4)
-plt.savefig("Graphics/black_body.png",dpi=100)
+plt.show()
+#plt.savefig("Graphics/black_body.png",dpi=100)
 plt.clf()
 #<----------------------Comprobación de la Ley de Wien----------------------->
 max_lon=max_lon*1e-9
@@ -63,4 +64,5 @@ plt.grid(ls="--",color="grey")
 #<-----------------------------Leyenda de cada eje-------------------------------->
 plt.xlabel("Temperatura (K)")
 plt.ylabel("Wavelength (nm)")
-plt.savefig("Graphics/wien_law.png",dpi=100)
+plt.show()
+#plt.savefig("Graphics/wien_law.png",dpi=100)
