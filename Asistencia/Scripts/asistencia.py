@@ -22,7 +22,8 @@ for file in files:
         if found!=0:
             #<-----------------------------Suma------------------------>
             counts[i]+=1
-assistance_file=open(dir+"Asistencia.txt","w")
+assistance_file=open("../Asistencia.csv","w")
+assistance_file.write("Matricula,asistencias\n")
 for id,count in zip(ids,counts):
-    assistance_file.write(id+" "+str(int(count))+"\n")
+    assistance_file.write(id[1:8]+","+str(int(count))+"\n")
 assistance_file.close()
